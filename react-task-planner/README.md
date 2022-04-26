@@ -14,6 +14,15 @@ Add Task butonuna tıklayarak ya da Month veya Week sayfalarından istediğimiz 
 
 Eklediğimiz taskların üstüne tıkladığımızda çıkan pop-up ekranından taskımızı silebilir veya düzenleyebiliriz.
 
+## Projede Kullandığım Teknolojiler
+
+- React
+- Context API
+- TypeScript
+- CSS3 (Tailwind CSS)
+- HTML5
+- Dayjs
+
 ## Projenin Eksikleri
 
 Header componentinde bulunan ikonlar sayesinde ayları değiştirebiliyoruz. Bu ikonları Day ve Week sayfalarına da ekleyerek gün ve hafta da değiştirilebilirdi.
@@ -24,13 +33,18 @@ Day componentinin tablo yapısı daha kullanışlı olabilirdi ve Day sayfasınd
 
 TypeScript daha etkin kullanılabilirdi.
 
-## Projede Kullandığım Teknolojiler
-
-- React
-- Context API
-- TypeScript
-- CSS3 (Tailwind CSS)
-- HTML5
-- Dayjs
-
 Projeyi `npm start` ile çalıştırabiliriz.
+
+## Docker
+
+Build =>
+```sh
+docker build -t task-app:dev .
+```
+
+Run =>
+```sh
+docker run --name my-task-planner -t -d -p 
+3000:3000 task-app:dev
+```
+
