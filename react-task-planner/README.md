@@ -39,12 +39,11 @@ Projeyi `npm start` ile çalıştırabiliriz.
 
 Build =>
 ```sh
-docker build -t task-app:dev .
+docker build -t task-app-react:dev .
 ```
 
 Run =>
 ```sh
-docker run --name my-task-planner -t -d -p 
-3000:3000 task-app:dev
+docker run --name my-task-planner-react -t -d -p 3000:3000 task-app-react:dev
 ```
 

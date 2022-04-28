@@ -4,16 +4,16 @@ RUN apt-get update
 
 WORKDIR /task-planner
 
-COPY package.json .
 COPY package-lock.json .
+COPY package.json .
 
 RUN npm install
 
+COPY bin ./bin
 COPY public ./public
-COPY src ./src
-COPY postcss.config.js /task-
+COPY routes ./routes
+COPY views ./views
+COPY app.js .
 COPY README.md .
-COPY tailwind.config.js .
-COPY tsconfig.json .
 
 CMD ["npm", "start"]
